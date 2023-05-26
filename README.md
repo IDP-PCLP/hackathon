@@ -63,7 +63,7 @@ restaurante = 'https://hackarestaurante-2023.azurewebsites.net'
 Agora podemos usar nossa lista de caminhos para os end points (variável paths) para acessar os end points da nossa API:
 
 ```python
-r = requests.get(rest+list(paths.keys())[0])
+r = requests.get(restaurante+list(paths.keys())[0])
 resposta = r.json()
 print(resposta)
 ```
