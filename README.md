@@ -7,14 +7,15 @@ Esse espaço é para o mentor prof Álvaro Campos Ferreira compartilhar seus pen
 A princípio, quero apenas ter um lugar onde compartilhar minha contribuição para o evento.
 
 Para início de conversa, vocês já devem conhecer os desafios e suas APIs associadas. Aqui estão para sua conveniência:
+Informações sobre as APIs:
 
  - Desafio Restaurante
 
-API: https://hackarestaurante-2023.azurewebsites.net/
+API: https://hackarestaurante-2023.azurewebsites.net/swagger/index.html 
 
  - Desafio Reserva
 
-API: https://hackareservaespaco-2023.azurewebsites.net/
+API: https://hackareservaespaco-2023.azurewebsites.net/swagger/index.html
 
 Essas duas APIs devem ser utilizadas para criar soluções para os desafios apresentados. Você pode criar um Frontend, um aplicativo de linha de comando, internet das coisas, o céu é o limite. Mas sua aplicação deve ser capaz de interagir com essa API. Deixo aqui nesse repositório alguns scripts para ajudar nessa tarefa. 
 
@@ -40,7 +41,19 @@ end_points = r.json()
 paths = end_points['paths']
 ```
 
-Agora temos uma nova variável que contém todos os end points para a nossa API do restaurante. Podemos usar outrta variável para representar a URL da API:
+Agora temos uma nova variável que contém todos os end points para a nossa API do restaurante. 
+
+As URLs das APIs em si, são as seguintes:
+
+ - Desafio Restaurante
+
+API: https://hackarestaurante-2023.azurewebsites.net/
+
+ - Desafio Reserva
+
+API: https://hackareservaespaco-2023.azurewebsites.net/
+
+Podemos usar outrta variável para representar a URL da API do restaurante:
 
 ```python
 restaurante = 'https://hackarestaurante-2023.azurewebsites.net'
@@ -57,13 +70,3 @@ print(resposta)
 Essa é uma forma de interagir com uma API usando Python. Explore a variável end_points, ou vá direto aos sites com os end points abaixo para descobrir como o backend de nossa aplicação funciona, quais end points são GET ou POST. Para fazer requests de POST usando a biblioteca requests, use a função post(). 
 
 Boa sorte!
-
-Informações sobre as APIs:
-
- - Desafio Restaurante
-
-API: https://hackarestaurante-2023.azurewebsites.net/swagger/index.html 
-
- - Desafio Reserva
-
-API: https://hackareservaespaco-2023.azurewebsites.net/swagger/index.html
